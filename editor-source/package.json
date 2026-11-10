@@ -1,0 +1,24 @@
+{
+  "name": "code-lab-editor",
+  "private": true,
+  "description": "Builds the code editor that is pasted into index.html",
+  "scripts": {
+    "build": "esbuild entry.js --bundle --minify --format=iife --target=es2019 --outfile=cm.js"
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "6.20.4",
+    "@codemirror/commands": "6.11.1",
+    "@codemirror/lang-python": "6.2.1",
+    "@codemirror/language": "6.13.1",
+    "@codemirror/lint": "6.9.7",
+    "@codemirror/search": "6.7.2",
+    "@codemirror/state": "6.7.6",
+    "@codemirror/view": "6.43.15",
+    "@lezer/highlight": "1.2.5",
+    "@replit/codemirror-indentation-markers": "6.5.3",
+    "codemirror": "6.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
